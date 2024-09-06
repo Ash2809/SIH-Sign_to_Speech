@@ -94,7 +94,7 @@ while True:
             prediction = model.predict([np.asarray(data_aux)])
             prediction_prob = model.predict_proba([np.asarray(data_aux)])
             predicted_character = labels_dict[int(prediction[0])]
-            confidence = max(prediction_prob[0])  # Get the maximum confidence score
+            confidence = max(prediction_prob[0])  
             
             if confidence > CONFIDENCE_THRESHOLD:
                 predictions.append(predicted_character)
@@ -106,7 +106,7 @@ while True:
                     if count >= MINIMUM_COUNT and (most_common_char != last_character or (time.time() - character_cooldown_start_time > CHARACTER_COOLDOWN if character_cooldown_start_time else True)):
                         word += most_common_char
                         last_character = most_common_char
-                        character_cooldown_start_time = time.time()  # Start cooldown timer
+                        character_cooldown_start_time = time.time()  
 
                 x1 = int(min(x_) * W) - 10
                 y1 = int(min(y_) * H) - 10
