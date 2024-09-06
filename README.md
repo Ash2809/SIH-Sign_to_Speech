@@ -2,6 +2,9 @@
 
 This repository provides a solution for converting sign language gestures into spoken words. It leverages computer vision, machine learning, and media processing technologies to detect and recognize hand gestures corresponding to different letters of the alphabet, forming words that are then converted into speech.
 
+## Tutorial
+C:\Projects\SIH-Sign_to_Speech\Tutorial.png
+
 ## Table of Contents
 - [Introduction](#introduction)
 - [Features](#features)
